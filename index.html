@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Valentine's Day Website</title>
+        <link rel = "stylesheet" href = "css/main.css">
+    </head>
+    <body>
+        <header>
+            <h1>Aly and Val</h1>
+        </header>
+        <section id = "our-story">
+            <h2>Our story</h2>
+        </section>
+        <section id="photo-gallery">
+            <h2>Memories</h2>
+            <div class="photo-container">
+                <img src="image1.jpg" alt="Photo 1">
+                <img src="image2.jpg" alt="Photo 2">
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+        <section id = "love-quiz">
+            <h2>Love Quiz</h2>
+            <form id = "quiz-form">
+                <label for = "q1">1. When did we start dating?</label>
+                <input type = "date" id = "q1" required>
+                <p></p>
+
+                <label for="q2">2. Where did we first meet?</label>
+                <input type="text" id="q2" required>
+                <p></p>
+
+                <label for="q3">3. What's your favorite memory of us?</label>
+                <textarea id="q3" required></textarea>
+
+                <button type="button" onclick="submitQuiz()">Submit</button>
+            </form>
+            <p id="quiz-result"></p>
+        </section>
+        <section id="countdown">
+            <h2>Countdowns</h2>
+            <h3>Movie date</h3>
+            <div id="countdown-timer"></div>
+        </section>
+        <script src="css/script.js"></script>
+    </body>
+</html>
+
